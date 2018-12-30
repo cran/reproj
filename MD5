@@ -1,0 +1,11 @@
+dbbaca75c360261a436151623da46f4e *DESCRIPTION
+f049a7ecf8583c21b67234141e662013 *NAMESPACE
+ace70047b9b9d8bce1a61ab8bd7ad0aa *NEWS.md
+d6e6724cd90a769fa67910464ebae5e0 *R/proj.R
+08f188c67bf3a3c8025e000a9cf6335c *R/reproj-package.r
+3bfb5b5e7dbad41aee1e1f1236c0ae74 *R/reproj.r
+a8aa5609a8cffa3bad650fd39796ad9a *README.md
+6bca605db1a093eead43972575be34fe *man/reproj-package.Rd
+f92332dbdfcd02d5b611e955e5268543 *man/reproj.Rd
+211a93b3d361e1911b2485cfbed382ea *tests/testthat.R
+6d65389e6fd4b3554c815b06bb9b1eb4 *tests/testthat/test-reproj.R
