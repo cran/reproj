@@ -3,11 +3,15 @@
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
-status](https://travis-ci.org/hypertidy/reproj.svg?branch=master)](https://travis-ci.org/hypertidy/reproj)[![AppVeyor
-build
-status](https://ci.appveyor.com/api/projects/status/github/hypertidy/reproj?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/reproj)
+status](https://travis-ci.org/hypertidy/reproj.svg?branch=master)](https://travis-ci.org/hypertidy/reproj)
+[![OSX Build
+Status](http://badges.herokuapp.com/travis/hypertidy/reproj?branch=master&env=BUILD_NAME=osx_release&label=osx)](https://travis-ci.org/hypertidy/reproj)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/hypertidy/reproj?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/reproj)  
 [![CRAN
-status](https://www.r-pkg.org/badges/version/reproj)](https://cran.r-project.org/package=reproj)[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/reproj)](https://cran.r-project.org/package=reproj)[![Coverage
+status](https://www.r-pkg.org/badges/version/reproj)](https://cran.r-project.org/package=reproj)
+[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/reproj)](https://cran.r-project.org/package=reproj)
+[![Coverage
 Status](https://img.shields.io/codecov/c/github/hypertidy/reproj/master.svg)](https://codecov.io/github/hypertidy/reproj?branch=master)
 
 # reproj
@@ -104,5 +108,6 @@ This is a wishlist / todo.
     for your own classes)
 
 Please note that the ‘reproj’ project is released with a [Contributor
-Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
-you agree to abide by its terms.
+Code of
+Conduct](https://hypertidy.github.io/reproj/CODE_OF_CONDUCT.html). By
+contributing to this project, you agree to abide by its terms.

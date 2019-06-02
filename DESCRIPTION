@@ -1,7 +1,7 @@
 Package: reproj
 Type: Package
 Title: Coordinate System Transformations for Map Data
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email =
     "mdsumner@gmail.com", comment=c(ORCID = "0000-0002-2471-7511"))
 Description: Transform coordinates via 'PROJ' using the library directly, by 
@@ -11,7 +11,8 @@ Description: Transform coordinates via 'PROJ' using the library directly, by
  at <https://proj4.org/>.  
 License: GPL-3
 LazyData: TRUE
-Imports: proj4
+Depends: R (>= 3.2.5)
+Imports: proj4, tibble
 Suggests: testthat, covr
 RoxygenNote: 6.1.1
 Encoding: UTF-8
@@ -19,8 +20,8 @@ SystemRequirements: PROJ (>= 4.4.6)
 BugReports: https://github.com/hypertidy/reproj/issues/
 URL: https://github.com/hypertidy/reproj/
 NeedsCompilation: no
-Packaged: 2019-04-20 06:41:47 UTC; mdsumner
+Packaged: 2019-06-02 13:13:13 UTC; mdsumner
 Author: Michael D. Sumner [aut, cre] (<https://orcid.org/0000-0002-2471-7511>)
 Maintainer: Michael D. Sumner <mdsumner@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-04-20 07:00:04 UTC
+Date/Publication: 2019-06-02 13:30:04 UTC

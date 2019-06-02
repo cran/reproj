@@ -51,8 +51,35 @@ test_that("basic with data frame works", {
   expect_equivalent(reproj(as.data.frame(pdat), source = laeaproj, target = llproj), dat)
 })
 
-test_that("bad arguments fail", {
+test_that("bad arguments fail if we can't assume longlat", {
+  options(reproj.assume.longlat = FALSE)
   expect_error(reproj(dat, llproj, target = llproj))
   expect_error(reproj(pdat, laeaproj, target = laeaproj))
 })
 
+test_that("bad arguments don't fail if we can assume longlat", {
+  options(reproj.assume.longlat = TRUE)
+  expect_warning(reproj(dat, llproj, target = llproj))
+  expect_error(reproj(pdat, laeaproj, target = laeaproj))
+})
+
+test_that("integer inputs become epsg strings", {
+  expect_true(grepl("init=epsg", to_proj(4326)))
+  expect_true(grepl("init=epsg", to_proj(3857)))
+  
+  expect_true(grepl("init=epsg", to_proj("4326")))
+  expect_true(grepl("init=epsg", to_proj("3857")))
+  
+  expect_error(validate_proj(3434))
+  
+  expect_silent(.onLoad())
+})
+
+
+test_that("mesh3d works", {
+  expect_silent(reproj(.mesh3d, "+proj=laea +datum=WGS84"))
+})
+
+test_that("sc works", {
+  expect_silent(reproj(.sc, "+proj=laea +datum=WGS84"))
+})
