@@ -114,3 +114,12 @@ test_that("is_ll works", {
   expect_true(!is_ll("EPSG:7373773"))
 
 })
+
+## doesn't work on macos latest (2022-10-28) on gh
+# test_that("geocentric works", {
+#   xyz <- reproj::reproj(cbind(147, -42),
+#                         target = "+proj=geocent +datum=WGS84",
+#                         source = "+proj=longlat +datum=WGS84")
+#   expect_equal(c(xyz > 0), c(FALSE, TRUE, FALSE))
+# })
+
