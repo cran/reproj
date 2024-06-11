@@ -1,3 +1,19 @@
+# reproj 0.7.0
+
+* PROJ proj_trans returns a matrix with columns matching input, so we align to that here with some protection for older style for revdeps. 
+
+# reproj 0.6.0
+
+* Fix drop problem in 1 row reproj_xy and reproj_xyz. 
+
+* PROJ package is now in Suggests, because a future release will not allow non-functional lib support. 
+
+* `reproj_extent()` now handles more situations, and gains a `limit` argument for
+one or two radius values to limit the distance from centre to edges to this value. 
+* When encountering strings "WGS84" or "NAD27" these are now replaced by their PROJ  string versions. 
+
+* New function `reproj_extent()` to produce a reprojected extent `xmin,xmax,ymin,ymax`. 
+
 # reproj 0.4.3
 
 * Argument 'four' is now disabled as we cannot support it. 
